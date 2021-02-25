@@ -12,21 +12,77 @@
 
   gtag('config', 'G-MPPF6SGFHF');
 </script>
+<style>
+body{
+  margin: 0;
+}
+a{
+  color:black;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1{
+  font-size:55px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+ol{
+  border-right: 1px solid gray;
+  width: 150px;
+  margin:0;
+  padding: 20px;
+}
+li{
+  font-size: 19px;
+}
+#active {
+  color: orange;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+#grid ol{
+  padding-left: 50px;
+}
+#article{
+  padding-left: 25px;
+}
+@media(max-width: 855px){
+  #grid {
+    display: block;
+  }
+  ol{
+    border-right: none;
+  }
+}
+</style>
   </head>
   <body>
     <h1><a href="index.html">Noesis</a></h1>
-    <ol>
+    <div id="grid">
+      <ol>
       <li><a href="1.html"> What is it?</a></li>
-      <li><a href="2.html"> Who are you?</a> </li>
+      <li><a href="2.html" id="active"> Who are you?</a> </li>
       <li><a href="3.html"> So what and How?</a> </li>
     </ol>
-    <H2>Who are you? </H2>
+
+    <div id="article">
+      <H2>Who are you? </H2>
     My name is <strong><u>Euijin</u> Kim</strong>.
+    <br> I'm Korean. I was born in 2004. <br>
+    Now I'm live in Argentina.
+    </div>
+  </div>
     <p>
       <div id="disqus_thread"></div>
 <script>
     /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  REOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     /*
     var disqus_config = function () {
